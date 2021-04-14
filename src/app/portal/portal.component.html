@@ -1,0 +1,21 @@
+<h2 class="title">
+    我是component</h2>
+  <ng-template #portalComponentOutlet cdkPortalOutlet></ng-template>
+  
+  <h2 class="title">我是template</h2>
+  <ng-template #portalTemplateOutlet cdkPortalOutlet></ng-template>
+  
+  
+  <h2 class="title">我是会变得</h2>
+  <ng-template [cdkPortalOutlet]="greeting"></ng-template>
+  
+  <h2 class="title">我是自动获取的</h2>
+  <ng-template [cdkPortalOutlet]="myCdkPortal2"></ng-template>
+  
+  <ng-template cdkPortal #myCdkPortal>
+    我是自动获取的，我是自动获取的
+  </ng-template>
+  
+  <ng-template #tpl>
+    ng template portal
+  </ng-template>
